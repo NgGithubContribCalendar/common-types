@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.2",
   "name": "@ng-github-contrib-calendar/common-types",
   "description": "Common typings for the github contrib calendar",
   "private": false,
