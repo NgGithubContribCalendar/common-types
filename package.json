@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "name": "@ng-github-contrib-calendar/common-types",
+  "description": "Common typings for the github contrib calendar",
+  "private": false,
+  "license": "GPL-3.0",
+  "types": "index.ts",
+  "dependencies": {
+  },
+  "author": {
+    "name": "Arturas Molcanovas",
+    "url": "https://alorel.github.io",
+    "email": "a.molcanovas@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NgGithubContribCalendar/common-types.git"
+  },
+  "homepage": "https://github.com/NgGithubContribCalendar/common-types",
+  "bugs": {
+    "url": "https://github.com/NgGithubContribCalendar/common-types/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
