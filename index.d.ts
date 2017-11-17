@@ -1,19 +1,53 @@
+/**
+ * How active a given day was, from 0 (no contributions) to 4 (a lot of contributions)
+ */
 export declare type Fill = 0 | 1 | 2 | 3 | 4;
 
+/**
+ * An abbreviated month name
+ */
+export declare type MonthLabel = 'Jan' |
+  'Feb' |
+  'Mar' |
+  'Apr' |
+  'May' |
+  'Jun' |
+  'Jul' |
+  'Aug' |
+  'Sep' |
+  'Oct' |
+  'Nov' |
+  'Dec' |
+  string;
+
+/**
+ * A given day's data
+ */
 export declare interface IRect {
-  count: number,
-  date: string,
-  fill: Fill
+  /** Number of contributions */
+  count: number;
+  /** Fill colour intensity */
+  fill: Fill;
+
+  /** The date in YYYY-mm-dd format */
+  date: string;
 }
 
+/** Grouped {@link IRect}s */
 export declare type IG = IRect[];
 
+/** Month position data */
 export declare interface IMonth {
-  txt: string,
-  x: number
+  /** Abbreviated month name */
+  txt: MonthLabel;
+  /** Horizontal offset */
+  x: number;
 }
 
+/** A full parsed payload of a user's calendar */
 export declare interface IParsedPayload {
-  months: IMonth[],
-  gs: IG[]
+  /** Grouped {@link IRect}s */
+  gs: IG[];
+  /** Month position data */
+  months: IMonth[];
 }
